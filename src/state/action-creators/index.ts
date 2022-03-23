@@ -21,7 +21,7 @@ export const sortByYear = (ifAscending: boolean) => {
     }
 }
 
-export const filter = (filterByType: string[]) => {
+export const filterByType = (filterByType: string[]) => {
     return (dispatch: Dispatch<Action>) => {
         dispatch({
             type: ActionType.FILTER,
@@ -30,12 +30,33 @@ export const filter = (filterByType: string[]) => {
     }
 }
 
-// export const select = (lifeEvent: LifeEvent) => {
-//     return (dispatch: Dispatch<Action>) => {
-//         dispatch({
-//             type: ActionType.SELECT,
-//             selectedEvent: lifeEvent
-//         })
-//     }
-// }
+export const selectCurrent = (selectedEvent: LifeEvent) => {
+    return (dispatch: Dispatch<Action>) => {
+        dispatch({
+            type: ActionType.SELECTCURRENT,
+            selectedEvent: selectedEvent
+        })
+    }
+}
+export const selectPrevious = () => {
+    return (dispatch: Dispatch<Action>) => {
+        dispatch({
+            type: ActionType.SELECTPREVIOUS
+        })
+    }
+}
+export const selectNext = () => {
+    return (dispatch: Dispatch<Action>) => {
+        dispatch({
+            type: ActionType.SELECTNEXT
+        })
+    }
+}
 
+export const reset = () => {
+    return (dispatch: Dispatch<Action>) => {
+        dispatch({
+            type: ActionType.RESET
+        })
+    }
+}

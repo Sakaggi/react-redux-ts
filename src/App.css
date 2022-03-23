@@ -1,5 +1,19 @@
+html,
+body {
+  height: 100%;
+}
+
+#root,
+.App {
+  height: inherit;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  height: inherit;
+}
 .map-container {
-  height: 400px;
+  height: inherit;
 }
 
 .sidebar {
@@ -13,4 +27,38 @@
   left: 0;
   margin: 12px;
   border-radius: 4px;
+}
+
+.navigate-buttons {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  padding: 6px 12px;
+  bottom: 10px;
+  left: 0;
+  z-index: 1;
+  font-family: monospace;
+  position: relative;
+  margin: 12px;
+  border-radius: 4px;
+}
+
+.selectable-event {
+  cursor: pointer;
+}
+.selectable-event:hover {
+  background-color: lightgrey;
+}
+
+.selectable-event.selected {
+  background-color: antiquewhite;
+}
+
+.filter {
+  padding: 5px 5px;
+  margin: 5px 5px;
+}
+.filter.selected {
+  background-color: black;
+  color: white;
 }

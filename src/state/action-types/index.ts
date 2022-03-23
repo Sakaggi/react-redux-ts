@@ -1,6 +1,9 @@
 export enum ActionType {
     SORTBYNAME = "sortByName",
     SORTBYYEAR = "sortByYear",
-    FILTER = "filter",
-    // SELECT = "select"
+    FILTER = "filterByType",
+    SELECTCURRENT = "selectCurrent",
+    SELECTPREVIOUS = "selectPrevious",
+    SELECTNEXT = "selectNext",
+    RESET = "reset"
 }

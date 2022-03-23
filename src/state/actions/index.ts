@@ -15,9 +15,19 @@ interface FilterAction {
     filterBy: string[]
 }
 
-// interface SelectAction {
-//     type: ActionType.SELECT,
-//     selectedEvent: LifeEvent
-// }
+interface SelectCurrentAction {
+    type: ActionType.SELECTCURRENT,
+    selectedEvent: LifeEvent
+}
 
-export type Action = SortByNameAction | SortByYearAction | FilterAction;
+interface SelectPreviousAction {
+    type: ActionType.SELECTPREVIOUS
+}
+interface SelectNextAction {
+    type: ActionType.SELECTNEXT
+}
+interface ResetAction {
+    type: ActionType.RESET
+}
+
+export type Action = SortByNameAction | SortByYearAction | FilterAction | SelectCurrentAction | SelectPreviousAction | SelectNextAction | ResetAction;
