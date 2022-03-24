@@ -49,7 +49,7 @@ Opens storybook with the UI components on URL [http://localhost:6006/](http://lo
 
 This code is written to show a list of places and fly to the location on the map as you select the list item.
 
-###Features
+### Features
 - Sort by place name(asc, desc)
 - Sort by year (asc, desc)
 - Filter items by clicking on the type of places. Resets the list upon clicking reset.
