@@ -28,7 +28,9 @@ const List = () => {
                 <Stack spacing={2}>
                     {state.selectedLifeEvents.map((lifeEvent: LifeEvent, i: number) =>
                         <Item>
-                            <div key={i} className={`selectable-event ${state.lookAt === lifeEvent && 'selected'}`} onClick={() => selectCurrent(lifeEvent)}>{lifeEvent.place}</div>
+                            <div key={i} className={`selectable-event ${state.lookAt === lifeEvent && 'selected'}`} onClick={() => selectCurrent(lifeEvent)}>{
+                                `${lifeEvent.place}: [${lifeEvent.start.toLocaleDateString()}-${lifeEvent.end.toLocaleDateString()}]`
+                            }</div>
                         </Item>)}
                 </Stack>
             </div>
