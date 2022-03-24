@@ -1,5 +1,5 @@
 import { IState } from "../IState";
-import allLifeEvents from "../../data/allLifeEvents";
+import allLifeEvents from "../../data";
 import { sort, filter } from "../../utils/helperFunctions";
 import { ActionType } from "../action-types";
 import { Action } from "../actions";

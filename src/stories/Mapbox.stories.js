@@ -1,6 +1,6 @@
 import { Provider } from "react-redux";
 import Mapbox from "../components/Mapbox";
-import allLifeEvents from "../data/allLifeEvents";
+import allLifeEvents from "../data";
 import { store } from '../state/store';
 
 export default {

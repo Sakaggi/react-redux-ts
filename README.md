@@ -14,7 +14,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `npm test`
+### `npm test` or `jest`
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
@@ -39,8 +39,26 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+
+### `npm run storybook`
+
+Opens storybook with the UI components on URL [http://localhost:6006/](http://localhost:6006/)
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## About
+
+This code is written to show a list of places and fly to the location on the map as you select the list item.
+
+###Features
+- Sort by place name(asc, desc)
+- Sort by year (asc, desc)
+- Filter items by clicking on the type of places. Resets the list upon clicking reset.
+- The metadata about the selected place is shown on the top of Mapbox.
+- Under the metadata, left and right arrow buttons are placed to navigate through the places.
+
+

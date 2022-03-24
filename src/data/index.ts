@@ -75,4 +75,6 @@ data.map((lifeEvent) => {
     allLifeEvents.push(new LifeEvent(lifeEvent.start, lifeEvent.end, lifeEvent.place, lifeEvent.coordinates as unknown as LngLat, lifeEvent.type, lifeEvent.details))
 })
 
+export const filterableTypes = Array.from(new Set<string>(allLifeEvents.map((lifeEvent) => lifeEvent.type).flat()));
+
 export default allLifeEvents;

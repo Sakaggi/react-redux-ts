@@ -9,6 +9,7 @@ import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 import Metadata from './Metadata';
+import { Button } from '@mui/material';
 
 mapboxgl.accessToken = 'pk.eyJ1Ijoic2FrYWdnaSIsImEiOiJjbDB2enIyczIwa3pqM2RvMmF4djhibmZhIn0.7mjlDHruPiQ-tS6alWfzzw';
 
@@ -62,8 +63,8 @@ const Mapbox = () => {
             <div ref={mapContainer} className="map-container">
                 <Metadata place={state.lookAt.place} start={state.lookAt.start} end={state.lookAt.end} type={state.lookAt.type} details={state.lookAt.details} />
                 <div className='navigate-buttons'>
-                    <button onClick={selectPrevious}><ArrowBackIosNewIcon /></button>
-                    <button onClick={selectNext}><ArrowForwardIosIcon /></button>
+                    <Button variant="outlined" onClick={selectPrevious}><ArrowBackIosNewIcon /></Button>
+                    <Button variant="outlined" onClick={selectNext}><ArrowForwardIosIcon /></Button>
                 </div>
             </div>
         </>

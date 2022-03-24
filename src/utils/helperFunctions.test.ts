@@ -2,7 +2,7 @@
 /// <reference types="jest" />
 
 import { filter, sort } from "./helperFunctions"
-import allLifeEvents from '../data/allLifeEvents'
+import allLifeEvents from '../data'
 
 test('properly sorts array in ascending order of place', () => {
     expect(sort(allLifeEvents, 'place', true)).toEqual(
